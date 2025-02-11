@@ -39,14 +39,26 @@ const CustomCard = ({
             praesentium dolores? Id non reiciendis sunt?
           </p>
           <div className="flex gap-4">
-            <Link to="#" target="_blank" className="text-white border font-semibold">
-            GitHub
+            <Link
+              to=""
+              target="_blank"
+              className="text-white border font-semibold"
+            >
+              Github
             </Link>
-            <Link to="#" target="_blank" className="text-white border font-semibold">
-            Youtube
+            <Link
+              to="#"
+              target="_blank"
+              className="text-white border font-semibold"
+            >
+              Youtube
             </Link>
-            <Link to="#" target="_blank" className="text-white border font-semibold">
-            Web
+            <Link
+              to="#"
+              target="_blank"
+              className="text-white border font-semibold"
+            >
+              Web
             </Link>
           </div>
         </div>
