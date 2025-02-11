@@ -11,6 +11,7 @@ import { CharacterType } from "../character-detail";
 const Home = () => {
   const [paginaActual, setPaginaActual] = useState<number>(1);
   const [personajes, setpersonajes] = useState<CharacterType[]>([]);
+  const [id, setId] = useState<string | number>("");
   useEffect(() => {
     getCharacters(paginaActual).then((res) => {
       setpersonajes(res);
@@ -24,7 +25,7 @@ const Home = () => {
       <div className="flex flex-col justify-center sm:flex-row gap-4 sm:flex-wrap sm:w-10/12 mx-auto">
         {personajes?.map((x) => (
           <div className="relative" key={x.id}>
-            <CustomCard data={x} />
+            <CustomCard data={x} id={id} setId={setId} />
           </div>
         ))}
       </div>
