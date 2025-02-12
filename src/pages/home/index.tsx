@@ -20,6 +20,9 @@ const Home = () => {
 
   console.log(personajes);
   return (
+
+    
+    
     <div className="flex flex-col justify-center gap-4 w-full mx-auto">
       <ButtonBar currentPage={paginaActual} setCurrentPage={setPaginaActual} />
       <div className="flex flex-col justify-center sm:flex-row gap-4 sm:flex-wrap sm:w-10/12 mx-auto">
