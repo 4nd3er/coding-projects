@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { CharacterType } from "../pages/character-detail";
 import { Card } from "./ui/card";
+import { Github } from "../components/Github.tsx";
+import { Youtube } from "../components/Youtube.tsx";
+import { Web } from "../components/Web.tsx";
 
 const CustomCard = ({
   data,
@@ -42,22 +45,25 @@ const CustomCard = ({
             <Link
               to=""
               target="_blank"
-              className="text-white border font-semibold"
+              className="text-white border font-semibold flex gap-2 p-1 rounded-md"
             >
-              Github
+              <Github />
+              github
             </Link>
             <Link
               to="#"
               target="_blank"
-              className="text-white border font-semibold"
+              className="text-white border font-semibold flex gap-2 p-1 rounded-md"
             >
+              <Youtube />
               Youtube
             </Link>
             <Link
               to="#"
               target="_blank"
-              className="text-white border font-semibold"
+              className="text-white border font-semibold flex gap-2 p-1 rounded-md"
             >
+              <Web />
               Web
             </Link>
           </div>
