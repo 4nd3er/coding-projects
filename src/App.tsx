@@ -3,7 +3,6 @@ import Init from "./pages/init/Init"
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Navbar from "./components/navbar";
-import CharacterDetail from "./pages/character-detail";
 import Home from "./pages/home";
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="character-detail/:id" element={<CharacterDetail />} />
       </Routes>
     </div>
   );
