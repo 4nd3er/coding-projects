@@ -11,6 +11,7 @@ export default {
       },
       backgroundImage: {
         gradient: "linear-gradient(transparent 70%,black)",
+        gradient_h: "linear-gradient(transparent 50%,black)",
       },
       colors: {
         background: "hsl(var(--background))",
