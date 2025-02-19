@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { CharacterType } from "../pages/character-detail";
 import { Card } from "./ui/card";
-import { Github } from "../components/Github.tsx";
+import { Github } from "./Github.tsx";
 import { Youtube } from "../components/Youtube.tsx";
 import { Web } from "../components/Web.tsx";
 
