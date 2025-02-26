@@ -20,14 +20,14 @@ const pages = [
       {
         name: "Github",
         link: "https://github.com/",
-        component: <Github />
+        component: <Github />,
       },
       {
         name: "Web",
         link: "https://flappybird.io/",
-        component: <Web />
-      }
-    ]
+        component: <Web />,
+      },
+    ],
   },
   {
     id: "2",
@@ -38,47 +38,44 @@ const pages = [
       {
         name: "Github",
         link: "https://github.com/",
-        component: <Github />
+        component: <Github />,
       },
       {
         name: "YouTube",
         link: "https://www.youtube.com/watch?v=E8iDAsG0bxM",
-        component: <Youtube />
+        component: <Youtube />,
       },
       {
         name: "Web",
         link: "https://www.memo-juegos.com/juegos-de-memoria-online/para-todos/memory-dificil/memory-cartas",
-        component: <Web />
+        component: <Web />,
       },
-    ]
+    ],
   },
   {
     id: "3",
     image: "/eagleAi.png",
-    name: "eagle Ai",
+    name: "Eagle Ai",
     description: "You can ask it, and it response",
     links: [
       {
         name: "Github",
         link: "https://github.com/",
-        component: <Github />
+        component: <Github />,
       },
       {
         name: "Web",
         link: "https://www.memo-juegos.com/juegos-de-memoria-online/para-todos/memory-dificil/memory-cartas",
-        component: <Web />
+        component: <Web />,
       },
-    ]
+    ],
   },
-]
+];
 
 const Home = () => {
   const [paginaActual, setPaginaActual] = useState<number>(1);
   const [id, setId] = useState<string | number>("");
   return (
-
-    
-    
     <div className="flex flex-col justify-center gap-4 w-full mx-auto">
       <ButtonBar currentPage={paginaActual} setCurrentPage={setPaginaActual} />
       <div className="flex flex-col justify-center sm:flex-row gap-4 sm:flex-wrap sm:w-10/12 mx-auto">
