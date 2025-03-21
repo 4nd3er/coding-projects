@@ -10,21 +10,16 @@ function Init() {
 
   const Images=[
     {
-      src:"/fein.jpg",
-      num:(Math.random()*100).toFixed()
+      src:"/flappyBird.png",
+      num:(Math.random()*25).toFixed()
     },
-    {
-      src:"/metroo.jpg",
-      num:(Math.random()*100).toFixed()
-    }
- ,
  {
-   src:"/metro.jpg" ,
-   num:(Math.random()*100).toFixed()
+   src:"/eagleAi.png" ,
+   num:(Math.random()*25).toFixed()
  },
  {
-  src:"/kendrick.jpg",
-  num:(Math.random()*100).toFixed()
+  src:"/cards.png",
+  num:(Math.random()*25).toFixed()
  }
 
   ]
@@ -46,7 +41,7 @@ JOIN TO COMMUNITY OF CODING
     <div className="flex justify-center items-center max-h-1/2 min-w-screen ">
       {Images?.map((x,index) => (
         <div className="relative" key={index}>
-          <img src={x.src} alt="" className="w-[200px]" style={{transform: `translateY(${x.num}px)translateX(${x.num}px) `}} />
+          <img src={x.src} alt="" className="sm:max-w-sm max-w-xs" style={{transform: `translateY(${x.num}px)translateX(${x.num}px) `}} />
         </div>
       ))}
     </div>
