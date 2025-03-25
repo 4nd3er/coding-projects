@@ -5,26 +5,20 @@ import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image} from "@her
 function SignUp() {
   const [action, setAction] = useState<string>();
   return (
-    <div className="h-screen w-screen flex justify-center "> 
+    <div className="w-full flex justify-center items-center"> 
     
-    <Card className="max-w-[400px]">
-      <CardHeader className="flex gap-3">
-        <Image
-          alt="heroui logo"
-          height={40}
-          radius="sm"
-          src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-          width={40}
-        />
+    <Card className="w-1/4 m-10">
+      <CardHeader className="flex gap-3 bg-black">
+      
         <div className="flex flex-col">
-          <p className="text-md">Sign Up</p>
+          <p className="text-md weight-900 text-white">Sign Up</p>
 
         </div>
       </CardHeader>
       <Divider />
       <CardBody>
       <Form
-    className="w-full max-w-xs flex flex-col gap-4 mt-10"
+    className="w-full flex-col gap-6 mt-10"
     onReset={() => setAction("reset")}
     onSubmit={(e) => {
       e.preventDefault();
@@ -41,6 +35,7 @@ function SignUp() {
       name="Name"
       placeholder="Enter your complete name"
       type="text"
+      className="mt-5"
     />
 
     <Input
@@ -51,7 +46,8 @@ function SignUp() {
       name="email"
       placeholder="Enter your email"
       type="email"
-      className="color-black"
+      className=" mt-5"
+      
     />
     <Input
       isRequired
@@ -61,8 +57,10 @@ function SignUp() {
       name="password"
       placeholder="Enter a password "
       type="password"
+      className="mt-5"
     />
-    <div className="flex gap-2">
+    <Divider/>
+    <div className="flex gap-3 mt-5">
       <Button color="primary" type="submit">
         Submit
       </Button>
@@ -70,19 +68,9 @@ function SignUp() {
         Reset
       </Button>
     </div>
-    {action && (
-      <div className="text-small text-default-500">
-        Action: <code>{action}</code>
-      </div>
-    )}
+    
   </Form>
       </CardBody>
-      <Divider />
-      <CardFooter>
-        <Link isExternal showAnchorIcon href="https://github.com/heroui-inc/heroui">
-          Visit source code on GitHub.
-        </Link>
-      </CardFooter>
     </Card>
    </div>
   )
