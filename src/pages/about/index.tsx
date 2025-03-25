@@ -1,9 +1,5 @@
-
-
-function About  ()  {
-  return (
-    <div>About</div>
-  )
+function LogIn() {
+  return <div>LogIn</div>;
 }
 
-export default About
+export default LogIn;
