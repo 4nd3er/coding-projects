@@ -4,6 +4,8 @@ import LogIn from "./pages/logIn/login";
 import Contact from "./pages/contact";
 import Navbar from "./components/navbar";
 import Home from "./pages/home";
+import  LogIn  from "./pages/logIn/LogIn"
+import SignUp from "./pages/signUp/SignUp";
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
         <Route path="/" element={<Init />} />
         <Route path="/home" element={<Home />} />
         <Route path="/LogIn" element={<LogIn />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="/SignUp" element={<SignUp />} />
       </Routes>
     </div>
   );

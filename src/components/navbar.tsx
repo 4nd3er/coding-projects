@@ -2,7 +2,6 @@ import React from "react";
 import descarga from "/descarga.jpg";
 import { Link } from "react-router-dom";
 import { Button } from "@heroui/react";
-
 const NavBar: React.FC = () => {
   return (
     <nav className="bg-white py-4 md:px-10 px-5 w-full border border-b-black">
@@ -21,7 +20,6 @@ const NavBar: React.FC = () => {
             Coding Web
           </h2>
         </div>
-
         <div className="flex gap-4 ">
           <Button color="default" variant="ghost">
             <Link to="/LogIn" className=" text-black">
@@ -30,7 +28,7 @@ const NavBar: React.FC = () => {
           </Button>
           <Button color="primary" variant="ghost">
             <Link
-              to="/contact"
+              to="/SignUp"
               className=" justify-items-end pl-4 pr-4 pt-1 pb-1 rounded-sm text-center"
             >
               Sign Up
