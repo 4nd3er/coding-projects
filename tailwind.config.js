@@ -65,9 +65,5 @@ export default {
     },
   },
   darkMode: "class",
-<<<<<<< HEAD
   plugins: [require("tailwindcss-animate"),heroui()],
-=======
-  plugins: [require("tailwindcss-animate"), heroui()],
->>>>>>> origin/foreDevelopment
 };
