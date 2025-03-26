@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+const { heroui } = require("@heroui/react");
+
 export default {
   darkMode: ["class"],
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -61,5 +65,6 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  darkMode: "class",
+  plugins: [require("tailwindcss-animate"),heroui()],
 };

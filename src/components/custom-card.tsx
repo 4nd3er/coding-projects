@@ -1,3 +1,4 @@
+import { Button } from "@heroui/react";
 import { Link } from "react-router-dom";
 import { Card } from "./ui/card";
 import { Github } from "./Github.tsx";
@@ -54,14 +55,14 @@ const CustomCard = ({
           </p>
           <div className="flex gap-4 over">
             {data?.links.map((link) => (
-              <Link
-                to={link.link}
-                target="_blank"
-                className="text-white border font-semibold flex gap-2 p-1 rounded-md"
+              <Button
+                className="text-white"
+                variant="bordered"
+                color="default"
+                startContent={link.component}
               >
-                {link.component}
                 {link.name}
-              </Link>
+              </Button>
             ))}
             {/* <Link
               to=""
