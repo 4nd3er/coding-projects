@@ -14,33 +14,37 @@ import { Input } from "@heroui/react";
 //   {id:3,name:"Metroo",description:"Criado en St. Louis, Wayne comenzó una carrera de producción en la escuela secundaria y se hizo más conocido por sus exitosas grabaciones con artistas de rap de Atlanta como Future, 21 Savage, Gucci Mane y Migos a mediados de la década de 2010.",url:"/metro.jpg",footer:"Overdue"}]
 
 export default function App() {
+
   return (
-    <div className="w-full flex justify-center items-center">
-      <Card className="">
-        <CardHeader className="flex gap-3 justify-center">
-          <div className="flex flex-col">
-            <p className="text-md font-sans font-semibold py-4 ">Login</p>
-          </div>
-        </CardHeader>
-        <Divider />
-        <div className="flex w-full flex-wrap flex-col md:flex-nowrap gap-4">
-          <Input className="text-black" label="Email" type="email" />
-          <Input
-            className="text-black"
-            label="Password"
-            placeholder="Enter your password"
-            type="password"
-          />
+    <Card className="mt-10">
+      <CardHeader className="flex gap-3 justify-center">
+        <div className="flex flex-col">
+          <p className="text-md font-sans font-semibold py-4 ">Login</p>
         </div>
-        <Divider />
-        <CardFooter className="justify-center">
-          <Button color="primary" radius="full" variant="ghost">
-            <Link to="/LogIn" className="">
-              Submit
-            </Link>
-          </Button>
-        </CardFooter>
-      </Card>
-    </div>
+      </CardHeader>
+      <Divider />
+      <CardBody>
+        <Input
+          className="mt-5"
+          label="Email"
+          type="email"
+          placeholder="Enter your email"
+        />
+        <Input
+          className="mt-5"
+          label="Password"
+          placeholder="Enter your password"
+          type="password"
+        />
+      </CardBody>
+      <Divider />
+      <CardFooter className="justify-center">
+        <Button color="primary" radius="full" variant="ghost">
+          <Link to="/LogIn" className="">
+            Submit
+          </Link>
+        </Button>
+      </CardFooter>
+    </Card>
   );
 }
